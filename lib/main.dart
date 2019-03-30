@@ -102,6 +102,15 @@ class DetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(user.name)),
+      body: Center(
+          child: ListView(
+        children: <Widget>[
+          Text(
+            user.about,
+            style: TextStyle(color: Colors.pink, fontSize: 25),
+          )
+        ],
+      )),
     );
   }
 }
